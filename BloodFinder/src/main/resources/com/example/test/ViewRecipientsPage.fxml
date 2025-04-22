@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.ViewRecipientsPageController">
+    <TableView fx:id="recipientsTable" layoutX="7.0" layoutY="61.0" prefHeight="288.0" prefWidth="586.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="199.20001220703125" text="Name" />
+            <TableColumn fx:id="bloodTypeColumn" prefWidth="196.79998779296875" text="Blood Type" />
+            <TableColumn fx:id="contactColumn" prefWidth="205.60006713867188" text="Contact" />
+        </columns>
+    </TableView>
+   <Button fx:id="Goback" layoutX="274.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#GoBack" text="Go Back" />
+   <Label layoutX="221.0" layoutY="8.0" prefHeight="50.0" prefWidth="165.0" style="-fx-font-size: 24px;" text="View Recipients" />
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.ReceiveRegController">
+   <children>
+      <Label layoutX="20.0" layoutY="159.0" text="Name:" />
+      <TextField fx:id="nameField" layoutX="100.0" layoutY="155.0" promptText="Enter your name" />
+
+      <Label layoutX="20.0" layoutY="202.0" text="ID:" />
+      <TextField fx:id="idField" layoutX="100.0" layoutY="198.0" promptText="Enter your ID" />
+
+      <Label layoutX="23.0" layoutY="315.0" text="Contact:" />
+      <TextField fx:id="Contact" layoutX="100.0" layoutY="309.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter your Mobile Number" />
+
+      <Label layoutX="20.0" layoutY="239.0" text="Date of Birth:" />
+      <DatePicker fx:id="dobPicker" layoutX="100.0" layoutY="235.0" promptText="Select your date of birth" />
+
+      <Label layoutX="20.0" layoutY="275.0" text="Blood Type:" />
+      <ComboBox fx:id="bloodTypeComboBox" layoutX="100.0" layoutY="271.0" promptText="Select blood type" />
+
+      <Button fx:id="submitButton" layoutX="194.0" layoutY="360.0" onMouseClicked="#submit" text="Submit" />
+      <TitledPane animated="false" layoutX="45.0" layoutY="-138.0" text="untitled" />
+      <ImageView fx:id="logo" fitHeight="178.0" fitWidth="267.0" layoutX="316.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="Goback" layoutX="117.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#GoBack" text="Go back" />
+      <Label fx:id="Welcome" alignment="CENTER" layoutX="51.0" layoutY="23.0" prefHeight="54.0" prefWidth="498.0" style="-fx-background-color: white;" text="Welcome to BloodFinder!!" textFill="#2b0000">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="77.0" prefHeight="54.0" prefWidth="326.0" text="Enter recipient details here">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

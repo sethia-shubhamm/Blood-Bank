@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.ViewDonorsPageController">
+    <Label layoutX="221.0" layoutY="8.0" prefHeight="50.0" prefWidth="134.0" style="-fx-font-size: 24px;" text="View Donors" />
+   <Button fx:id="Back" mnemonicParsing="false" onMouseClicked="#Goback" text="Go Back" translateX="-270.0" translateY="-45.0" />
+    <TableView fx:id="donorsTable" layoutX="7.0" layoutY="61.0" prefHeight="322.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="204.0" text="Name" />
+            <TableColumn fx:id="bloodTypeColumn" prefWidth="184.0" text="Blood Type" />
+            <TableColumn fx:id="contactColumn" prefWidth="213.60009765625" text="Contact" />
+        </columns>
+    </TableView>
+</VBox>
